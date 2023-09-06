@@ -1,5 +1,8 @@
 let tab=["pierre","feuille","ciseaux"];
 
+let vicJ=0;
+let vikb=0;
+
 
 let Bpierre = document.getElementById('pierre');
 let Bfeuille = document.getElementById('feuille');
@@ -12,6 +15,7 @@ function bot(){
 let joueur=document.getElementById('joueur');
 let robot=document.getElementById('robot');
 let resultat=document.getElementById('resultat');
+let score=document.getElementById('score');
 
 
 Bpierre.addEventListener('click',()=>{
@@ -23,14 +27,16 @@ Bpierre.addEventListener('click',()=>{
 
     if (val==2){
         resultat.textContent="gagnant";
+        vicJ++;
     }
     else if(val==0){
         resultat.textContent="execo";
     }
     else {
         resultat.textContent="perdant";
+        vikb++;
     }
-
+    score.textContent="score robot: "+vikb+ "score joueur: "+ vicJ;
     
 });
 
@@ -46,15 +52,17 @@ Bfeuille.addEventListener('click',()=>{
 
     if (val==0){
         resultat.textContent="gagnant";
+        vicJ++;
     }
     else if(val==1){
         resultat.textContent="execo";
     }
     else  {
         resultat.textContent="perdant";
+        vikb++;
     }
 
-    
+    score.textContent="score robot: "+vikb+ "score joueur: "+ vicJ;
 });
 
 
@@ -66,14 +74,16 @@ Bciseaux.addEventListener('click',()=>{
 
     if (val==1){
         resultat.textContent="gagnant";
+        vicJ++;
     }
     else if(val==2){
         resultat.textContent="execo";
     }
     else  {
         resultat.textContent="perdant";
+        vikb++;
     }
-
+    score.textContent="score robot: "+vikb+ ", score joueur: "+ vicJ;
     
 });
 
