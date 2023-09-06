@@ -36,7 +36,7 @@ Bpierre.addEventListener('click',()=>{
         resultat.textContent="perdant";
         vikb++;
     }
-    score.textContent="score robot: "+vikb+ "score joueur: "+ vicJ;
+    score.textContent="score robot: "+vikb+ ", score joueur: "+ vicJ;
     
 });
 
@@ -62,7 +62,7 @@ Bfeuille.addEventListener('click',()=>{
         vikb++;
     }
 
-    score.textContent="score robot: "+vikb+ "score joueur: "+ vicJ;
+    score.textContent="score robot: "+vikb+ ", score joueur: "+ vicJ;
 });
 
 
