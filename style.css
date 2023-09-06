@@ -1,12 +1,22 @@
 
 
 .box {
+    display: block;
     margin: auto;
-    width: 20%;
-    height: 60px;
+    
+    width: 300px;
+    height: auto;
     
     background-color: blue;
     text-align: center;
+}
+
+
+.box button{
+margin-top: 15px;
+margin-bottom: 15px;
+background-color: antiquewhite;
+text-decoration: blue;
 }
 
 
@@ -20,9 +30,9 @@
     margin-right: auto;
     display: block;
    
-    width: 20%;
-    height: auto;
-    border-radius: 4px;
+    width: 300px;
+    height: 80px;
+    border-radius: 5px;
     border-width: 4px;
     border-style: groove;
     border-color: aquamarine;
